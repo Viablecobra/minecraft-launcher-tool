@@ -57,6 +57,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        launcher: {
+          bg: "hsl(var(--launcher-bg))",
+          card: "hsl(var(--launcher-card))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
