@@ -70,14 +70,6 @@ const AppLauncher = () => {
     });
   };
 
-  const quickLaunchApps = [
-    { name: "Chrome", packageId: "com.android.chrome" },
-    { name: "Gmail", packageId: "com.google.android.gm" },
-    { name: "YouTube", packageId: "com.google.android.youtube" },
-    { name: "WhatsApp", packageId: "com.whatsapp" },
-    { name: "Instagram", packageId: "com.instagram.android" },
-    { name: "TikTok", packageId: "com.zhiliaoapp.musically" },
-  ];
 
   return (
     <div className="min-h-screen bg-launcher-bg p-4 space-y-6">
@@ -121,34 +113,6 @@ const AppLauncher = () => {
           </CardContent>
         </Card>
 
-        {/* Quick Launch Apps */}
-        <Card className="mb-6 shadow-[var(--launcher-shadow)]">
-          <CardHeader>
-            <CardTitle>Quick Launch</CardTitle>
-            <CardDescription>Popular apps for quick access</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-2 gap-3">
-              {quickLaunchApps.map((app) => (
-                <Button
-                  key={app.packageId}
-                  variant="outline"
-                  onClick={() => {
-                    setPackageId(app.packageId);
-                    setTimeout(launchApp, 100);
-                  }}
-                  className="h-auto p-3 flex flex-col items-center gap-2 hover:bg-accent/10"
-                >
-                  <Smartphone className="w-5 h-5" />
-                  <span className="text-sm font-medium">{app.name}</span>
-                  <span className="text-xs text-muted-foreground truncate w-full">
-                    {app.packageId}
-                  </span>
-                </Button>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
 
         {/* Recent Apps */}
         {recentApps.length > 0 && (
