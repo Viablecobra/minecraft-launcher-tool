@@ -79,7 +79,7 @@ const AppLauncher = () => {
           <div className="w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
             <Rocket className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-2xl font-bold text-foreground">Custom App Launcher</h1>
+          <h1 className="text-2xl font-bold text-foreground">MineLaunch</h1>
           <p className="text-muted-foreground">Launch any Android app by package ID</p>
         </div>
 
