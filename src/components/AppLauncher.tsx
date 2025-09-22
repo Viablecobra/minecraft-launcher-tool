@@ -80,7 +80,7 @@ const AppLauncher = () => {
             <Rocket className="w-10 h-10 text-white" />
           </div>
           <h1 className="text-2xl font-bold text-foreground">MineLaunch</h1>
-          <p className="text-muted-foreground">Launch any Android app by package ID</p>
+          <p className="text-muted-foreground">Let's Play</p>
         </div>
 
         {/* Main Launch Card */}
